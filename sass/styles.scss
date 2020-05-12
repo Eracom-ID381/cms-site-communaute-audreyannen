@@ -1,12 +1,6 @@
 @import "_includes/reset.scss";
 @import "_includes/variables.scss";
-@import "_includes/mixins.scss";
-// header {
-//     background: rgba(252, 62, 158);
-//     height: 100px;
-//     width: 100%;
-// }
-//
+@import "_includes/mixins.scss"; //
 // main {
 //     background: rgba(255, 255, 255);
 //
@@ -33,8 +27,7 @@
 // .text-section {
 //     padding: 1rem;
 // }
-//
-// footer {
-//     background: rgba(252, 62, 158);
-//     height: 100px;
-// }
+
+.h1 {
+	font-family: $primary-font;
+}
