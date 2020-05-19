@@ -2,32 +2,37 @@
 @import "_includes/variables.scss";
 @import "_includes/mixins.scss"; //
 // main {
-//     background: rgba(255, 255, 255);
-//
-//     // ON PEUT CALCULER DES CHOSES EN PURE CSS
-//     height: calc(100vh - 100px * 2);
-//
-//     // GRID SETTINGS
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     justify-items: center;
-//     align-items: center;
-//     grid-gap: 1rem;
+// 	background: rgba(255, 255, 255);
+// 	// ON PEUT CALCULER DES CHOSES EN PURE CSS
+// 	height: calc(100vh - 100px * 2);
+// 	// GRID SETTINGS
+// 	display: grid;
+// 	grid-template-columns: 1fr 1fr;
+// 	justify-items: center;
+// 	align-items: center;
+// 	grid-gap: 1rem;
 // }
 //
 // .image-section {
-//     padding: 1rem;
-//
+// 	padding: 1rem;
 // }
 //
 // .image-section img {
-//     width: 100%;
+// 	width: 100%;
 // }
 //
 // .text-section {
-//     padding: 1rem;
+// 	padding: 1rem;
 // }
 
 .h1 {
 	font-family: $primary-font;
+}
+
+.one-column {
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	object-fit: cover;
+	text-align: center;
 }
