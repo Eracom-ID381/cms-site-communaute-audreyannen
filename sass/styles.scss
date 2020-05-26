@@ -1,17 +1,45 @@
 @import "_includes/reset.scss";
 @import "_includes/variables.scss";
-@import "_includes/mixins.scss"; //
-// main {
-// 	background: rgba(255, 255, 255);
-// 	// ON PEUT CALCULER DES CHOSES EN PURE CSS
-// 	height: calc(100vh - 100px * 2);
-// 	// GRID SETTINGS
-// 	display: grid;
-// 	grid-template-columns: 1fr 1fr;
-// 	justify-items: center;
-// 	align-items: center;
-// 	grid-gap: 1rem;
-// }
+
+header {
+	position: fixed;
+	right: 0;
+}
+
+section {
+	height: 100vh;
+
+	&#first-section {
+		background: rgba(255,0,0);
+		margin-top: -10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&#second-section {
+		background: rgba(0,255,0);
+	}
+
+	&#third-section {
+		background: rgba(0,0,255);
+	}
+
+	&#second-section,
+	&#third-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.circle {
+	background: rgba(0,0,0);
+	height: 100px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	width: 100px;
+}
 //
 // .image-section {
 // 	padding: 1rem;
@@ -24,13 +52,19 @@
 // .text-section {
 // 	padding: 1rem;
 // }
+//variables
+
+#main-nav {
+	color: $textcolor;
+}
 
 .h1 {
-	font-family: $primary-font;
+	//font-family: $primary-font;
 }
 
 .one-column {
 	width: 100vw;
+	height: 100vh;
 	position: absolute;
 	top: 0;
 	object-fit: cover;
