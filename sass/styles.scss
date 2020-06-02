@@ -10,19 +10,18 @@ section {
 	height: 100vh;
 
 	&#first-section {
-		background: rgba(255,0,0);
-		margin-top: -10px;
+		background: url("../img/crowd2.jpg");
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
 	&#second-section {
-		background: rgba(0,255,0);
+		background: url("../img/riseagainst.jpg");
 	}
 
 	&#third-section {
-		background: rgba(0,0,255);
+		background: url("../img/korn_live.jpg");
 	}
 
 	&#second-section,
@@ -31,35 +30,30 @@ section {
 		align-items: center;
 		justify-content: center;
 	}
+
+	&#first-section,
+	&#second-section,
+	&#third-section {
+		background-size: cover;
+		font-family: sans-serif;
+	}
 }
 
 .circle {
-	background: rgba(0,0,0);
-	height: 100px;
+	background: $bluecircle;
+	height: 150px;
 	-moz-border-radius: 75px;
 	-webkit-border-radius: 75px;
-	width: 100px;
+	width: 150px;
+	opacity: 0.7;
 }
-//
-// .image-section {
-// 	padding: 1rem;
-// }
-//
-// .image-section img {
-// 	width: 100%;
-// }
-//
-// .text-section {
-// 	padding: 1rem;
-// }
-//variables
 
 #main-nav {
 	color: $textcolor;
 }
 
-.h1 {
-	//font-family: $primary-font;
+h1 {
+	font-size: 100px;
 }
 
 .one-column {
@@ -69,4 +63,24 @@ section {
 	top: 0;
 	object-fit: cover;
 	text-align: center;
+}
+
+ul li {
+	display: inline;
+}
+
+a {
+	color: $textcolor;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	color: $bluebutton;
+}
+
+li {
+	list-style: none;
 }
